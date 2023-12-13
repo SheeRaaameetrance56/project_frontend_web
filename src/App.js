@@ -5,6 +5,7 @@ import Navbar from './layout/navbar';
 import Home from './pages/home';
 import AddUser from './users/addUser';
 import EditUser from './users/editUser';
+import ViewUser from './users/viewUser';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/adduser" element={<AddUser />} />
           <Route exact path="/edituser/:id" element={<EditUser />} />
+          <Route exact path="/viewuser/:id" element={<ViewUser />} />
         </Routes>
       </Router>
     </div>
